@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            window.onload = function()
+            {
+                getmarks();
+            }
+            function getmarks()
+            {
+                var total = 0;
+                for(var i=0; i<5; i++)
+                {
+                    var marks = parseInt(window.prompt("Enter marks: "));
+                    total += marks;
+                }
+                document.write("total: ", total);
+                document.write("<br>");
+                document.write("Avarage: ", total/5);
+                var button = document.createElement("button");
+                button.innerHTML = "GRADE";
+                button.onclick = function()
+                {
+                    if(avarege > 30)
+                    {
+                    window.alert("Congratulation");
+                    }
+                    else
+                    {
+                    window.alert("Better Luck naet time");
+                    }
+                }
+                document.body.appendChild(button);
+            }
+        </script>
+        <button>Grade</button>
+    </body>
+</html>
