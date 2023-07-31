@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item.active {
+    color: green;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .image-grid img{
+    width:400px;
+    height: 300px;
+  }
