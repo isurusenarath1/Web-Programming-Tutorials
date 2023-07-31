@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculate Marks</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 5px;
+        margin: 5px;
+      }
+      input {
+        padding: 10px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Enter 5 marks:</h2>
+    <input type="number" id="mark1" placeholder="Mark one" />
+    <input type="number" id="mark2" placeholder="Mark two" />
+    <input type="number" id="mark3" placeholder="Mark three" />
+    <input type="number" id="mark4" placeholder="Mark four" />
+    <input type="number" id="mark5" placeholder="Mark five" />
+    <button onclick="calculateAverageAndDisplay()">GRADE</button>
+
+    <script>
+      function calculateAverageAndDisplay() {
+        const mark1 = parseFloat(document.getElementById("mark1").value);
+        const mark2 = parseFloat(document.getElementById("mark2").value);
+        const mark3 = parseFloat(document.getElementById("mark3").value);
+        const mark4 = parseFloat(document.getElementById("mark4").value);
+        const mark5 = parseFloat(document.getElementById("mark5").value);
+
+       
+        if (!mark1 || !mark2 || !mark3 || !mark4 || !mark5) {
+          alert("Please enter all 5 marks.");
+          return;
+        }
+
+        const total = mark1 + mark2 + mark3 + mark4 + mark5;
+        const average = total / 5;
+
+        if (average > 30) {
+          alert("Congrats! You passed");
+        } else {
+          alert("Better luck next time");
+        }
+      }
+    </script>
+  </body>
+</html>

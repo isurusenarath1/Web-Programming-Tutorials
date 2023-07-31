@@ -1,0 +1,87 @@
+<!--Create the following Registration Form and display the values of the 
+input fields as shown below using HTML, CSS & PHP.
+Once the submit button of the Registration form is clicked, the output 
+should display like this
+_____________________________
+| First Name    | Kamal     |
+| Last Name     | Perera    |
+| Username      | Pererak10 |
+| Password      | JIjr455A  |
+| Gender        | Male      |
+| Academic Year | 1 Year    |
+| Phone No      | 0771264839|
+-----------------------------
+-->
+
+<!-- http://localhost/PHP2/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      .registration-form {
+        border: 1px solid #ccc;
+        padding: 20px;
+        max-width: 300px;
+      }
+
+      .form-row {
+        margin-bottom: 10px;
+      }
+
+      .form-row label {
+        display: inline-block;
+        width: 120px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="registration-form">
+      <h2>Registration Form</h2>
+      <form action="process_form.php" method="post">
+        <div class="form-row">
+          <label>First Name:</label>
+          <input type="text" name="first_name" required />
+        </div>
+        <div class="form-row">
+          <label>Last Name:</label>
+          <input type="text" name="last_name" required />
+        </div>
+        <div class="form-row">
+          <label>Username:</label>
+          <input type="text" name="username" required />
+        </div>
+        <div class="form-row">
+          <label>Password:</label>
+          <input type="password" name="password" required />
+        </div>
+        <div class="form-row">
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="Male" required /> Male
+          <input type="radio" name="gender" value="Female" required /> Female
+        </div>
+        <div class="form-row">
+          <label>Academic Year:</label>
+          <select name="academic_year" required>
+            <option value="1 Year">1 Year</option>
+            <option value="2 Years">2 Years</option>
+            <option value="3 Years">3 Years</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Phone No:</label>
+          <input type="text" name="phone_no" required />
+        </div>
+        <div class="form-row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

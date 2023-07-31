@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extract Year of Birth</title>
+  </head>
+  <body>
+    <button onclick="extractYearOfBirth()">Extract Year of Birth</button>
+
+    <script>
+      function extractYearOfBirth() {
+        const nicNumber = prompt("Enter the student's NIC number:");
+
+        if (nicNumber.length === 12 && nicNumber.match(/^\d+$/) !== null) {
+          const birthYear = nicNumber.substring(0, 4);
+
+          alert(`Year of Birth: ${birthYear}`);
+        } else {
+          alert(
+            "Invalid NIC number! Please enter a valid 12-digit NIC number."
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

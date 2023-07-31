@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("Tutorial\ 01\ Q2\ pic.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  form {
+    background: #222536;
+  }
+  table th {
+    color: #fff;
+    background: #de8704;
+  }
+  table th,
+  table td {
+    padding: 12px;
+    margin: 5px;
+  }
+  table td label {
+    color: #fffb00;
+  }
+  table .bottom {
+    background: #de8704;
+  }
+  table tr td input[type="submit"] {
+    background: #088608;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+  }
+  table tr td input[type="reset"] {
+    padding: 15px;
+    color: #fff;
+    background: #cc145d;
+    border: none;
+    cursor: pointer;
+  }
+
